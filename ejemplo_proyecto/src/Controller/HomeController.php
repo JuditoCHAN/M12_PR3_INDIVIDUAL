@@ -31,7 +31,7 @@ class HomeController extends AbstractController
         //return new Response(json_encode($usuari), Response::HTTP_OK, ['Content-Type' => 'application/json']);
         
         //Content-type indica el tipo de contenido que envía el servidor en su respuesta
-        //para que el navegador/el cliente sepa cómo interpretar los datos que recibe
+        //Para que el navegador/el cliente sepa cómo interpretar los datos que recibe
         //Response::HTTP_OK es igual a poner 200, e le indica al cliente que la solicitud ha sido procesada con éxito
         return new JsonResponse($resposta, Response::HTTP_OK);
     }
